@@ -1,0 +1,25 @@
+{
+  "name": "nodetodo",
+  "version": "1.0.0",
+  "description": "todo api built with nodejs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "testapi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobbie/nodetodo.git"
+  },
+  "author": "Tobi Akinseye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobbie/nodetodo/issues"
+  },
+  "homepage": "https://github.com/tobbie/nodetodo#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.10",
+    "vash": "^0.12.4"
+  }
+}
