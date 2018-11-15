@@ -4,7 +4,8 @@
   "description": "todo api built with nodejs ",
   "main": "index.js",
   "scripts": {
-    "test": "testapi"
+    "start": "node ./",
+    "debug": "nodemon --inspect"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
     "url": "https://github.com/tobbie/nodetodo/issues"
   },
   "homepage": "https://github.com/tobbie/nodetodo#readme",
-  "devDependencies": {
+  "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.3.10",
