@@ -12,8 +12,7 @@ module.exports = function(app){
 
         Todos.find({username : request.params.username}, function(error, results){
             if(error || results.length < 1)
-            {
-               
+            {              
                 response.status(httpStatus.NOT_FOUND)
                         .send({error: httpStatus.getStatusText      (httpStatus.NOT_FOUND)});              
             }
@@ -21,8 +20,7 @@ module.exports = function(app){
             {
                 response.status(httpStatus.OK)
                 .send(results);
-            }
-                       
+            }                      
         });
     });
 
@@ -33,8 +31,7 @@ module.exports = function(app){
             if(error)
             {
                 throw error;
-            }
-            
+            }            
             response.status(httpStatus.OK)
             .send(results);
             
@@ -81,6 +78,7 @@ module.exports = function(app){
     });
 
 
+ //delete todo by id
     app.delete('/api/todo', function(request, response){
         Todos.findOneAndDelete(request.body.id, function(error){
             if(error) throw error;
