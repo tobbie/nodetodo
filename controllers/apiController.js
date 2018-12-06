@@ -45,7 +45,7 @@ module.exports = function(app){
             Todos.findByIdAndUpdate(request.body.id, {
                 todo : request.body.todo,
                 isDone : request.body.isDone,
-                hasAttachement : request.body.hasAttachement
+                hasAttachment : request.body.hasAttachment
             }, function(error, result){
                 if(error) throw error;
                 response.status(httpStatus.OK);
@@ -58,7 +58,7 @@ module.exports = function(app){
                 username : 'test',
                 todo : request.body.todo,
                 isDone : request.body.isDone,
-                hasAttachement : request.body.hasAttachement
+                hasAttachment : request.body.hasAttachment
             });
 
             newTodo.save(function(error){
