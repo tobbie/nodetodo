@@ -4,7 +4,7 @@
   "description": "todo api built with nodejs ",
   "main": "index.js",
   "scripts": {
-    "start": "node ./",
+    "start": "node index.js",
     "debug": "nodemon --inspect"
   },
   "repository": {

@@ -7,7 +7,7 @@ var homeController = require('./controllers/homeController');
 var setupController = require('./controllers/setupController');
 var apiController = require('./controllers/apiController');
 
-var port = process.env.PORT || 4002;
+var port = process.env.PORT || 3000;
 
 app.use('/assets', express.static(__dirname + '/public'));
 
